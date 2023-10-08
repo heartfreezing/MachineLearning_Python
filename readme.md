@@ -89,7 +89,7 @@ def computerCost(X,y,theta):
     m = len(y)
     J = 0
     
-    J = (np.transpose(X*theta-y))*(X*theta-y)/(2*m) #计算代价J//transpose转置
+    J = (np.transpose(X*theta-y))*(X*theta-y)/(2*m) #计算代价J   #transpose转置
     return J
 ```
  - 注意这里的X是真实数据前加了一列1，因为有theta(0)
